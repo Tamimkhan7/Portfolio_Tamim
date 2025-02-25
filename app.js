@@ -1,3 +1,34 @@
+//active my others services not only home
+const navLinks = document.querySelectorAll('header nav a');
+const logoLink = document.querySelector('.logo');
+
+const activePage = () => {
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+}
+
+navLinks.forEach((link, idx) => {
+    link.addEventListener('click', () => {
+        if (!link.classList.contains('active')) {
+            activePage();
+
+            link.classList.add('active');
+        }
+    });
+});
+
+logoLink.addEventListener('click', () => {
+    //The contains() method returns true if a node is a descendant of a node.
+    //The contains() method returns false if not.
+
+    if (!navLinks[0].classList.contains('active')) {
+        activePage();
+
+        navLinks[0].classList.add('active');
+    }
+});
+
 const resumebtn = document.querySelectorAll('.resume-btn');
 
 //btn means resume-btn ar value gula, mention here
