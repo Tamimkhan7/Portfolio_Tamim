@@ -27,8 +27,8 @@ const totalSlides = document.querySelectorAll('.portfolio-carousel .img-item').l
 
 const activePortfolio = () => {
     const ImaSlide = document.querySelector('.portfolio-carousel');
-    const portfolioDetails = document.querySelectorAll('.portfolio-detail');
     ImaSlide.style.transform = `translateX(calc(${index * -100}% - ${index * 2}rem))`;
+    const portfolioDetails = document.querySelectorAll('.portfolio-detail');
 
     portfolioDetails.forEach(detail => {
         detail.classList.remove('active');
