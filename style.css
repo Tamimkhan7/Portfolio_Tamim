@@ -203,6 +203,7 @@ animation-delay: calc(-4s * var(--i)); */
 #home-detail p {
   font-size: 1.2rem;
   margin: 1rem 0 2.5rem;
+  text-justify: auto;
 }
 
 #home-detail .btn-sci {
@@ -459,11 +460,12 @@ animation-delay: calc(-4s * var(--i)); */
 .resume-list .resume-item {
   background: var(--second-bg-color);
   border-radius: 0.8rem;
-  padding: 3rem 2.5rem;
-  height: calc((45rem - 2rem) / 2);
+  padding: 2rem 2.5rem;
+  /* height: calc((45rem - 1.5rem) / 2); */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .resume-list .year {
